@@ -22,7 +22,7 @@ This is the basic architecture of this laboratory.
 
 1. The frontend component is written in ReacJs, the user will be able to create a new account using the cognito APIS, this includes sign up, email verification and log in. Once those 3 steps are completed `Cognito` will send the user data and the tokens to keep the session alive.
 
-2. Every request from the frontend to the backend will have the tokens retreived from `Cognito`, from the backend side there is one additional validation calling a `validation` endpoint from cognito to verufy that the received token from the frontend are correct and without modifications. 
+2. Every request from the frontend to the backend will have the tokens retreived from `Cognito`, from the backend side there is one additional validation calling a `validation` endpoint from cognito to verify that the received token from the frontend are correct and without modifications. 
 
 3. Once the validation process is executed then rhe request will be routed to the corresponding API route.
 
@@ -34,7 +34,7 @@ This is the basic architecture of this laboratory.
 
 #### The stack
 
-First execute `npm run synth && nom rn deploy` in the  `feedsstack` project. This will create the resources required to this laboratory (Cognito, user pools, roles etc). Remember that CDk will take your credentials and configuration from `~/.aws/aws_credentials`
+First execute `npm run synth && npm run deploy` in the  `feedsstack` project. This will create the resources required to this laboratory (Cognito, user pools, roles etc). Remember that CDk will take your credentials and configuration from `~/.aws/aws_credentials`
 
 #### The frontend
 
