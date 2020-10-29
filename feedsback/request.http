@@ -1,0 +1,33 @@
+@url=http://localhost:9000/feeds/api
+
+
+
+###
+GET {{url}}/
+accesstoken: eyJraWQiOiJjY2x6K3F3MzRyZDkrdThJMkxmams3NHJxbHJldFlOTGswMFBQcGZYZGUwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNDVmN2M3MS05ZTZiLTQ3YWQtOTFhNC03MThjN2ZjMTBkNDkiLCJldmVudF9pZCI6Ijk5MzhmZjM1LTQ0NTgtNDdiMi1hZWRhLWU2ZjYxYjA5M2RlMiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MDM5MzEzMzMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy13ZXN0LTIuYW1hem9uYXdzLmNvbVwvdXMtd2VzdC0yXzdDQWprMGhuVyIsImV4cCI6MTYwMzkzNDkzMywiaWF0IjoxNjAzOTMxMzMzLCJqdGkiOiIwODgxNzAxOS0xMzI3LTQ3MDktYjYwZS0yMzkzNmZlNjE2MWUiLCJjbGllbnRfaWQiOiJoZmo0bjBob2djMzk3ZGhpcG5yMnZsZmpiIiwidXNlcm5hbWUiOiJjNDVmN2M3MS05ZTZiLTQ3YWQtOTFhNC03MThjN2ZjMTBkNDkifQ.j2W8kqb9AZhxCuVtgWgVDp78J6jhL2mtvFPovkiAk7ipsfHSXxhT7FlCLOlmHqcy0GQ928NBONwqqqms8W6WqVzjOb4gnht40kszrQOZ0KC4JhByx8j4pWiDWhbCV8JvvJ-e_0lbQuopyZxPSx1zL2XqsNDjth79nWxazJDabhwuevyiIhmkBW_PqR7Qg8Z5-ZHBJ9D65e6xq0DE6Sr1zTXNEwOBnS0hik7lau00oacVoIaEl1cZyAhmrCFi7yRCNGAv6FRbeYPxEVv2EaSkNSpV2l2FcwlsFOaPEWdxhCaTD0-dHlt5Sj74tQWvpTE9FEOk58O1XlAMr1vo5oXNXw
+
+
+###
+POST {{url}}/message
+
+###
+POST {{url}}/feed
+Content-Type: application/json
+
+{
+    "text": " sadfasdf asdf masdf asdf asdfasdf asdf asdf asdfasdfasdfasdfasdf asdf sd fasdf asd fasdf ad f",
+    "username": "Felipe",
+    "date": "October 28, 2020"
+}
+
+
+
+###
+POST {{url}}/feed
+Content-Type: application/json
+
+{
+    "text": " ssaa",
+    "username": "Felipe",
+    "date": "October 28, 2020"
+}
