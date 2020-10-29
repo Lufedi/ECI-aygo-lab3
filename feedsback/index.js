@@ -55,6 +55,7 @@ const server = app.listen(port, () => {
 //sockets connection
 const io = socketio(server)
 
+//TODO auth for sockets
 io.on("connection", (socket) => {
     io.emit("USER_EMMIT", DB.users + 1);
     DB.users += 1
